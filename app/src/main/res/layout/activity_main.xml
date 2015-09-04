@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:nestedScrollingEnabled="false"
+    android:background="@drawable/wall18">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Iiivalues"
+        android:id="@+id/txtTitle"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_me"
+        android:onClick="clickAboutMe"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/txtTitle"
+        android:layout_above="@+id/button"
+        android:layout_margin="20dp"
+        android:background="#32ffffff" />
+</RelativeLayout>
